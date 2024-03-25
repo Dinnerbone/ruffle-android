@@ -7,15 +7,15 @@ updates:
     allow:
       - dependency-type: "all"
     groups:
+      ruffle:
+        patterns:
+          - "ruffle*"
       rust-minor:
         patterns:
           - "*"
         update-types:
           - "minor"
           - "patch"
-      ruffle:
-        patterns:
-          - "ruffle*"
   - package-ecosystem: "gradle"
     directory: "/"
     schedule:
